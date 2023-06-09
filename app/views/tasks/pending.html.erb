@@ -1,0 +1,10 @@
+<h1>Lista de tareas pendientes</h1>
+
+<ul id="tasks">
+  <% @incompleted_tasks.each do |task| %>
+    <%= render task %>
+    <p>
+      <%= link_to "Ver tarea", task %>
+    </p>
+  <% end %>
+</ul>

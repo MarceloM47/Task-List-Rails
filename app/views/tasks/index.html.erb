@@ -1,0 +1,10 @@
+<h1>Tareas</h1>
+
+<div id="tasks">
+  <% @tasks.each do |task| %>
+    <%= render task %>
+    <p>
+      <%= link_to "Ver tarea", task %>
+    </p>
+  <% end %>
+</div>

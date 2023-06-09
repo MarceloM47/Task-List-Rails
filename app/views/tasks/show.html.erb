@@ -1,0 +1,8 @@
+<%= render @task %>
+
+<div>
+  <%= link_to "Editar esta tarea", edit_task_path(@task) %> |
+  <%= link_to "Volver a la lista de Tareas", tasks_path %>
+
+  <%= button_to "Eliminar esta tarea", @task, method: :delete, class:"btn btn-outline-danger" %>
+</div>
